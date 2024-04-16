@@ -1,0 +1,650 @@
+/*------ Specification---------*/
+body {
+	margin: 0;
+	padding: 0;
+
+	font-family: 'Museo Sans Cyrl 300', sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	letter-spacing: 0.02em;
+	line-height: 1.4;
+	color: #22241b;
+}
+
+.container {
+	width: 940px;
+	margin: 0 auto;
+}
+
+div, p, form, input, a, span, button, ul, li{
+	box-sizing: border-box;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+
+	font-family:'Natasha', sans-serif;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+}
+
+.subject {
+	font-size: 37px;
+	line-height: 1.5em;
+}
+
+.caption {
+	font-size: 22px;
+	color: rgba(34, 36, 27, 0.66)
+}
+
+.headline {
+	font-family: 'Museo Sans Cyrl 900', sans-serif;
+}
+
+ul, li {
+	margin: 0;
+	padding: 0;
+
+	display: block;
+}
+
+a, a:hover, a:active {
+	text-decoration: none;
+	color:inherit;
+}
+
+a {
+	transition: all 0.5s ease;
+}
+
+.d-flex {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+.justify-content-between {
+	justify-content: space-between;
+}
+
+.align-items-center {
+	align-items: center;
+}
+/*------ Header section---------*/
+
+.header {
+	background: url(../img/background.jpg) no-repeat center top/cover;
+	color: #fff;
+	padding: 47px 0px 83px;
+} 
+
+.header .container {
+	height: 710px;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.menu {
+	width: 335px;
+	font-family: 'Museo Sans Cyrl 900', sans-serif;
+	text-transform: uppercase;
+	margin-left: 20px;
+	letter-spacing: 0.12em;
+}
+
+.menu__link {
+	border:3px solid transparent;
+}
+
+.menu__link:hover {
+	border: 3px solid #fff;
+}
+
+.menu__link:active {
+	transform: scale(1.1);
+}
+
+.mail {
+	font-size: 13px;
+	border: 1px solid transparent;
+	border-bottom: 1px solid #6d706d;
+	letter-spacing: 0.12em;
+
+}
+
+.mail:hover {
+	border: 1px solid #fff; 
+}
+
+.mail:active {
+	transform: scale(1.1);
+}
+
+.title {
+	font-size: 49px;
+	text-align: center;
+	line-height: 1.65;
+	margin-top: 20px;
+}
+
+.title span {
+	display: block;
+	font-size: 29px;
+	font-family: 'Museo Sans Cyrl 100';
+	font-weight: normal;
+	text-transform: uppercase;
+	letter-spacing: 0.12em;
+
+}
+
+.link {
+	display: block;
+	width: 40px;
+	height: 40px;
+	border: 1px solid #f9f9f9;
+	border-radius: 50%;
+
+	font-size: 18px; 
+	color: #fff;
+	text-align: center;
+	line-height: 35px;
+
+	margin: 0 auto;
+}
+
+.link:hover {
+	background: #fff;
+	color: #204d15;
+}
+
+.link:active {
+	background: #f9f9f9;
+}
+
+/*------ Section About ---------*/
+
+.about {
+	padding: 75px 0px 80px;
+}
+
+.wrap {
+	margin-top: 60px;
+}
+
+.background {
+	max-width: 432px; 
+}
+
+.background__caption {
+	margin-bottom: 30px;
+}
+
+.background p {
+	line-height: 1.8em;
+	margin-bottom: 27px;
+}
+
+.background p:last-child {
+	margin-bottom: 0px;
+}
+
+.col {
+	width: 470px;
+}
+
+.merit__caption {
+	margin-bottom: 38px;
+}
+
+.merit__list {
+	max-width: 425px;
+	margin: 0 auto;
+}
+
+.merit__item {
+	width: 108px;
+	position: relative;
+	margin-bottom: 58px;
+	text-align: center;
+}
+
+.merit__index {
+	width: 103px;
+	height: 103px;
+	font-size: 20px;
+	color: #3e6534;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto 23px;
+}
+
+.merit__index:before, .merit__index:after {
+	content: '';
+	position: absolute;
+	transform: rotate(45deg);
+}
+
+.merit__index:before {
+	width: 72px;
+	height: 72px;
+	border: 1px solid #3e6534;
+}
+
+.merit__index:after {
+	width: 58px;
+	height: 58px;
+	border: 1px solid #cddbc3;
+	
+}
+
+.merit__heading {
+	font-size: 12px;
+	font-family: 'Museo Sans Cyrl 100', sans-serif;
+	line-height: 1.5em;
+	text-transform: uppercase;
+	letter-spacing: 0.02em;
+}
+
+.connection {
+	font-size: 14px;
+}
+
+.connection__caption {
+	margin-bottom: 28px;
+}
+
+.connection__author {
+	width: 257px;
+}
+
+.connection__item {
+	margin-bottom: 15px;
+	color: #204d15;
+}
+
+.connection__link {
+	border: 1px solid transparent;
+	border-bottom: 1px solid rgba(32, 77, 21, 0.29);
+	letter-spacing: 0.12em;
+}
+
+.connection__link:hover {
+	border: 1px solid rgba(32, 77, 21, 0.29);
+}
+
+.connection__item:last-child {
+	margin-bottom: 0;
+}
+
+.connection__icon {
+	width: 64px;
+  	height: 64px;
+  	border-radius: 50%;
+  	background: rgba(32, 77, 21, 0.08);
+	font-size: 25px;
+	text-align: center;
+	line-height: 64px;
+	color: #204d15;
+}
+
+.connection__text {
+	color: #22241b;
+	margin-right: 7px;
+}
+
+/*------ Section Skills ---------*/
+
+.skills__subject {
+	margin-bottom: 50px;
+}
+
+.skills__list {
+	max-width: 840px;
+	margin-right: auto;
+}
+
+.skills__item {
+	width: 210px;
+	flex-basis: 38%;
+}
+
+.skills__item:last-child {
+	width: 133px;
+	flex-basis: 16%;
+}
+
+.skills__index {
+	width: 59px;
+  	height: 59px;
+  	border-radius: 50%;
+  	border:1px solid #204d15;
+  	margin-right: 26px;
+
+  	justify-content: center;
+	align-items: center;
+
+	font-family: 'Museo Sans Cyrl 100', sans-serif;
+	font-size: 13px;
+	color: #204d15;
+}
+
+.skills__index:after {
+	content: '';
+	position: absolute;
+	border-radius: 50%;
+	width: 49px;
+  	height: 49px;
+  	border:1px solid #adb2ac;
+}
+
+/*------ Section Working ---------*/
+ 
+.working {
+	padding: 73px 0px 28px;
+}
+
+.working__subject {
+	margin-bottom: 45px;
+}
+
+.working__item {
+	position: relative;
+	width: 32%;
+}
+
+.working__item img {
+	display: block;
+	max-width: 100%;
+}
+
+.working__overlay {
+	background: rgba(0,0,0,0.56);
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.working__overlay:hover{
+	opacity: 1;
+	transition: all 1s ease;
+}
+
+.working__link {
+	border:1px solid transparent;
+	border-bottom: 1px solid #9a9ca0;
+	font-size: 13px;
+}
+
+.working__link:hover {
+	border: 1px solid #9a9ca0; 
+}
+
+.working__link {
+	transform: scale(1.1);
+}
+
+/*------ Section Footer ---------*/
+
+.footer {
+	padding: 94px 0;
+}
+
+.footer p {
+	font-size: 11px;
+	letter-spacing: 0.14em;	
+	color: rgba(34, 36, 27, 0.66);
+	text-transform: uppercase;
+}
+
+/* ------ Media Queries ------ */
+
+/* 992-1200px */
+@media screen and (max-width: 1200px) {
+	
+}
+
+/* 768-992px */
+@media screen and (max-width: 992px) {
+	.container {
+		width: 700px;
+	}
+
+	.menu {
+		margin-left: 0;
+		width: 280px;
+		font-size: 14px;
+	}
+
+	.title {
+		margin-top: 0;
+		font-size: 46px;
+	}
+
+	.title span {
+		font-size: 28px;	
+	}
+
+	.subject, .caption, .merit__heading, .headline {
+		text-align: center;
+	}
+
+	.subject {
+		font-size: 36px;
+	}
+
+	.caption {
+		font-size: 21px;
+	}
+
+	.wrap {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.background {
+		width: 90%;
+	}
+
+	.background p:last-child {
+		margin-bottom: 50px;
+	}
+
+	.col {
+		width: 90%;
+	}
+
+	.connection__list {
+		text-align: center;
+	}
+
+	.skills__list {
+		width: 100%;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	.skills__item {
+		margin-bottom: 10px;
+	}
+
+	.skills__item:last-child {
+		width: 210px;
+		flex-basis: 38%;
+	}
+
+	.working__overlay:focus {
+		opacity: 1;
+		transition: all 1s ease;
+	}
+
+	.footer .container {
+		justify-content: center;
+	}
+}
+
+/* 576-768px */
+@media screen and (max-width: 768px) {
+	.container {
+		width: 520px;
+	}
+
+	.header .container {
+		height: 600px;
+	}
+
+	.navigation {
+		align-items: flex-start;
+	}
+
+	.menu {
+		display: none;
+	}
+
+	.title {
+		font-size: 40px;
+	}
+
+	.title span {
+
+		font-size: 22px;
+		line-height: 1.5em;	
+	}
+
+	.subject {
+		font-size: 31px;
+	}
+
+	.caption {
+		font-size: 19px;
+	}
+
+	.skills__item {
+		width: 210px;
+		margin-bottom: 20px;
+	} 
+
+	.skills__index {
+		margin-right: 26px;
+	}
+
+	.working__list {
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+		-ms-align-items: center;
+		align-items: center;
+	}
+
+	.working__item {
+		width: 100%;
+		max-width: 300px;
+		margin-bottom: 20px;
+	}
+
+	.working__item:last-child {
+		margin-bottom: 0;
+	}
+}
+
+/* 320-576px */
+@media screen and (max-width: 576px) {
+	.container {
+		width: 90%;
+	}
+
+	.navigation {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.logo {
+		margin-bottom: 15px;
+	}
+
+	.menu {
+		margin-bottom: 10px;
+	}
+
+	.title {
+		font-size: 38px;
+		line-height: 1.15em;
+	}
+
+	.caption {
+		text-align: center;
+	}
+
+	.merit__list {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.merit__item {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		width: 90%;
+		margin-bottom: 20px;
+	}
+
+	.merit__index {
+		width: 105px;
+		margin-right: 30px;
+	}
+
+	.merit__heading {
+		width: 200px;
+		margin-bottom: 20px;
+		text-align: left;
+	}
+
+	.merit__heading:last-child br {
+		display: none;
+	}
+
+	.connection__write {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.connection__list {
+		margin-bottom: 40px;
+	}
+
+	.skills__list {
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.footer {
+		padding: 40px 0;
+	}
+}
