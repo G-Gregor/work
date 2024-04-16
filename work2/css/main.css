@@ -1,0 +1,587 @@
+/*------ Specification---------*/
+body {
+	margin: 0;
+	padding: 0;
+
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	line-height: 1.5;
+	letter-spacing: 0em;
+	color: #6c7279;
+}
+
+div, p, form, input, a, span, button, ul, li{
+	box-sizing: border-box;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #2d3033;
+}
+
+.title_big {
+	font-size: 45px;
+	font-weight: bold;
+	color: #fff;
+}
+
+.subject {
+	font-size: 14px;
+}
+
+ul, li {
+	margin: 0;
+	padding: 0;
+
+	display: block;
+}
+
+a, a:hover, a:active {
+	text-decoration: none;
+	color:inherit;
+}
+
+a,a:hover, a:active {
+	transition: all 0.5s ease;
+}
+
+input, input:hover, input:focus, input:active,
+button, button:hover, button:focus, button:active,
+a, a:hover, a:active, a:focus {
+	outline: none;
+}
+
+img {
+	display: block;
+}
+
+.button {
+	display: block;
+	font-weight: bold;
+	font-size: 13px;
+	line-height: 42px;
+	text-align: center;
+	color: #fff;
+	text-transform: uppercase;
+
+	background: #e84545;
+	border-radius: 2px;
+	border: 2px solid transparent;
+}
+
+.button:hover,.button:focus {
+	background: #fff;
+	color: #e84545;
+}
+
+.button:active {
+	border: 2px solid #e84545;
+}
+
+.visually-hidden {
+	overflow: hidden;
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+}
+
+/*------ Section Header---------*/
+
+.header {
+	background: url(../img/header_bg.jpg) no-repeat center top/cover;
+	position: relative;
+	padding-bottom: 244px;
+}
+
+.header:after {
+	content: '';
+	background: rgba(13, 11, 23, 0.78);
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.header .container {
+	height: 505px;
+	position: relative;
+	color: #fff;
+	z-index: 3;
+}
+
+.navigation {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+	padding-top: 35px;
+	margin-bottom: 177px;
+}
+
+.menu__link {
+	display: block;
+	padding: 0px 35px 40px;
+	position: relative;
+	width: 100%;
+	color: #fff;
+	text-transform: uppercase;
+	transition: all 1s ease;
+}
+
+.menu__item:last-child .menu__link {
+	padding-right: 0;
+}
+
+.menu__link:after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 3px;
+	background: rgba(255, 255, 255, 0.502);
+	left: 0;
+	bottom: 0;
+	transform: scaleX(0);
+  	transition: all 1s ease;
+}
+
+.menu__link:hover:after {
+	 transform: scaleX(1);
+}
+
+.menu__link:active {
+	color: #e84545;
+}
+
+.menu__link:active:after {
+	background: #e84545;
+}
+
+.offer_color {
+	color: #2d3033;
+}
+
+.offer__title {
+	font-size: 28px;
+	font-weight: bold;
+	text-transform: none;
+	margin-bottom: 13px;
+
+}
+
+.offer__title_big {
+	margin-bottom: 35px;
+}
+
+.offer p {
+	max-width: 556px;
+	margin: 0 auto;
+	font-size: 22px;
+	margin-bottom: 28px;
+}
+
+.offer_color p {
+	font-size: 13px;
+	text-transform: uppercase;
+	margin-bottom: 35px;
+}
+
+.offer__button {
+	width: 200px;
+	margin: 0 auto;
+}
+
+.offer__button_width {
+	width: 281px;
+}
+
+/*------ Section Advantages---------*/
+.advantages {
+	padding: 122px 0 25px;
+}
+
+.use {
+	text-align: center;
+}
+
+.advantages li:nth-child(-n+3) .use {
+	margin-bottom: 70px;
+}
+
+.use p {
+	font-size: 14px;
+	max-width: 320px;
+	margin: 0 auto;
+}
+
+.use__icon {
+	width: 79px;
+	height: 60px;
+	margin: 0 auto 31px;
+}
+
+.use__icon_customised {
+	background: url(../img/icons/customised.png) no-repeat center;
+}
+
+.use__icon_using {
+	background: url(../img/icons/Using.png) no-repeat center;
+}
+
+.use__icon_ideas {
+	background: url(../img/icons/ideas.png) no-repeat center;
+}
+
+.use__icon_smart {
+	background: url(../img/icons/smart.png) no-repeat center;
+}
+
+.use__icon_business {
+	background: url(../img/icons/business.png) no-repeat center;
+}
+
+.use__icon_access {
+	background: url(../img/icons/access.png) no-repeat center;
+}
+
+.use__subject {
+	margin-bottom: 17px;
+}
+
+/*------ Section Gallery---------*/
+
+.gallery {
+	padding: 97px 0px 107px;
+}
+
+.project {
+	position: relative;
+	max-width: 263px;
+}
+
+.gallery {
+	width: 100%;
+}
+
+.project__overlay {
+	background: rgba(232, 69, 69, 0.9);
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.project__overlay:hover{
+	opacity: 1;
+	transition: all 1s ease;
+}
+
+.project__subject {
+	margin-bottom: 5px;
+	color: #fff;
+}
+
+.project p {
+	margin-bottom: 3px;
+}
+
+/*------ Section Team---------*/
+
+.team {
+	background: #f1f2fd;
+	padding: 125px 0px 115px;
+}
+
+.member img {
+	max-width: 100%;
+}
+
+.member__title {
+	text-transform: none;
+	font-size: 22px;
+	margin: 25px 0px 10px;
+}
+
+.member__subtitle {
+	font-size: 13px;
+	font-weight: normal;
+	color: #e84545;
+
+	margin-bottom: 22px;
+}
+
+.member p {
+	margin-bottom: 25px;
+}
+
+.member img {
+	display: block;
+}
+
+.member__social-list {
+	width: 128px;
+}
+
+.member__social-link {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 42px;
+	height: 42px;
+	border: 1px solid #e8ecee;
+	background: #fff;	
+}
+
+.member__social-link_facebook:hover,
+.member__social-link_facebook:focus {
+	background: #1877F2;
+}
+
+.member__social-link_facebook:active,
+.member__social-link_twitter:active,
+.member__social-link_linked:active {
+	box-shadow: 3px 3px 10px rgba(59, 89, 152, 0.5);
+}
+
+.member__social-link_facebook:hover path,
+.member__social-link_facebook:focus path {
+	fill: #fff;
+}
+
+.member__social-link_twitter:hover,
+.member__social-link_twitter:focus {
+	background: #F2F2F2;
+}
+
+.member__social-link_twitter:hover path,
+.member__social-link_twitter:focus path {
+	fill: #55ADED;
+}
+
+.member__social-link_linked:hover,
+.member__social-link_linked:focus {
+	background: #006599;
+}
+
+.member__social-link_linked:hover path,
+.member__social-link_linked:focus path {
+	fill: #fff;
+}
+
+/*------ Section Designer---------*/
+
+.designer{
+	background: #53354a;
+	color: #fff;
+}
+.photo {
+	background: url(../img/SussanSims.jpg) no-repeat right top/cover;
+	height: 500px;
+}
+
+.designer q {
+	max-width: 535px;
+	margin: 0px 0px 35px 53px;
+
+	font-family: 'OpenSans-Italic';
+	font-size: 36px;
+	/*font-style: italic;*/
+	line-height: 1.15em;
+	
+}
+
+.designer cite {
+	font-size: 13px;
+	font-style: normal;
+	text-transform: uppercase;
+	margin:0px 0px 5px 55px;
+}
+
+/*------ Section Download---------*/
+
+.download {
+	padding: 94px 0px 100px;
+}
+
+.offer__button_width:hover,
+.offer__button_width:focus {
+	border: 2px solid #e84545; 
+}
+
+.offer__button_width:active {
+	box-shadow: 5px 5px 10px rgba(232, 69, 69, 0.7)
+}
+
+/*------ Section Footer---------*/
+
+.footer {
+	padding: 82px 0px 75px;
+	background: #3a3e64;
+	border-bottom: 12px solid #313454;
+
+	color: #fff;
+}
+
+.footer li:first-child .info {
+	max-width: 150px;
+	margin: 0 auto;
+}
+
+.info__subject {
+	color: #fff;
+	margin-bottom: 15px;
+}
+
+.info p {
+	opacity: 0.5;
+}
+
+.info .red {
+	color: #e84545;
+}
+
+.info .white {
+	opacity: 1;
+}
+
+/* Media Queries */
+/* 992-1200px */
+@media screen and (max-width: 1200px) {
+	.project {
+		margin: 0 auto;
+	}
+
+	.team {
+		padding-bottom: 50px;
+	}
+
+	.member {
+		margin-bottom: 60px;
+		text-align: center;
+	}
+
+	.member img {
+		margin: 0 auto;
+	}
+
+	.member__social-list {
+		margin: 0 auto;
+	}
+
+	.designer q {
+		padding-right: 15px;
+	}
+}
+/* 768 - 992 px */
+@media screen and (max-width: 992px) {
+	.logo {
+		margin: 0 auto 50px;
+	}
+
+	.menu__link {
+		padding-bottom: 10px;
+	}
+
+	.menu__item:first-child .menu__link {
+		padding-left: 0;
+	}
+
+	.info {
+		margin: 0 auto;
+	}
+
+	.info p {
+		max-width: 320px;
+		margin: 0 auto 20px;
+	}
+
+/* 576 - 768 px */
+@media screen and (max-width: 768px) {
+	.header {
+		padding-bottom: 200px;
+	}
+
+	.navigation {
+		border: 0;
+		margin-bottom: 144px;
+	}
+
+	.advantages {
+		padding-top: 90px;
+	}
+
+	.use {
+		margin-bottom: 70px;
+	}
+
+	.advantages li:last-child .use {
+		margin-bottom: 0;
+	}
+
+	.gallery {
+		padding: 90px 0;
+	}
+
+	.team {
+		padding: 90px 0;
+	}
+
+	.download {
+		padding: 80px 0;
+	}
+
+	.footer {
+		padding: 80px 0;
+	}
+}
+/* 320 - 576 px */
+@media screen and (max-width: 576px) {
+	.offer__title_big {
+		font-size: 36px;
+	}
+
+	.offer p {
+		font-size: 18px;
+	}
+
+	.photo {
+		display: none;
+	}
+
+	.designer {
+		padding: 50px 0;
+	}
+
+	.designer q {
+		font-size: 28px;
+		margin-left: 0;
+	}
+
+	.designer cite {
+		font-size: 11px;
+		margin-left: 0;
+	}
+}	
